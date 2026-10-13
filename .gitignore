@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Herramientas
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Datos reales: la base y sus backups nunca se suben
+data/*.db
+
+# Archivos de entrada exportados del sistema de ventas
+*.xls
+*.xlsx
+*.xlsm
+*.zip
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
