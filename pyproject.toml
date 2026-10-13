@@ -1,0 +1,22 @@
+[project]
+name = "diferencias-cobro"
+version = "1.0.0"
+description = "Detecta diferencias entre la lista de precios y lo cobrado en el reporte de ventas diario."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["diferencias", "conftest"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]  # datos de prueba en una sola línea se leen mejor
